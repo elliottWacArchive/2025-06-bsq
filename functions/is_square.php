@@ -1,4 +1,5 @@
 <?php
+
 function is_square(array $map, int $row, int $col, int $size): bool
 {
     for ($i = $row; $i < $row + $size; $i++) {

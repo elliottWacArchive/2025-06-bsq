@@ -10,9 +10,8 @@ function draw_square(array &$map, int $row, int $col, int $size)
         $map[$row][$col] = 'x';
         return;
     }
-
-    for ($i = $row; $i < $size; $i++) {
-        for ($j = $col; $j < $size; $j++) {
+    for ($i = $row; $i < $size + $row; $i++) {
+        for ($j = $col; $j < $size + $col; $j++) {
             $map[$i][$j] = 'x';
         }
     }
